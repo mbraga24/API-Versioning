@@ -176,3 +176,9 @@ http://localhost:3000/api/v1/products/
 ```
 
 *You should be able to see all the products.*
+
+## Article source: ##
+
+https://medium.com/swlh/how-to-build-an-api-with-ruby-on-rails-28e27d47455a
+
+_The key steps were taken from this article for personal document and to be revisited when needed_
