@@ -175,7 +175,7 @@ rails s
 http://localhost:3000/api/v1/products/
 ```
 
-*You should be able to see all the products.*
+_You should be able to see all the products._
 
 ## Article source: ##
 
