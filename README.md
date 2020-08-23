@@ -20,23 +20,23 @@ rails g controller api/v1/products index show --no-helper --no-assets --no-templ
 __You should see something like this on the terminal:___
 
 ```
-Running via Spring preloader in process 44453
-      create  app/controllers/api/v1/products_controller.rb
-       route  namespace :api do
-  namespace :v1 do
-    get 'products/index'
-    get 'products/show'
+Rails.application.routes.draw do
+  namespace :api do
+    namespace :v1 do
+      get 'products/index'
+      get 'products/show'
+    end
   end
 end
 ```
 __Change your boiler plate routes to this:__
 
 ```
-Running via Spring preloader in process 44453
-      create  app/controllers/api/v1/products_controller.rb
-       route  namespace :api do
-  namespace :v1 do
-    resources :products, only: [:index, :show, :create]
+Rails.application.routes.draw do
+  namespace :api do
+    namespace :v1 do
+      resources :products, only: [:index, :show, :create]
+    end
   end
 end
 ```
