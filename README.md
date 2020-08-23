@@ -144,3 +144,35 @@ irb(main):003:0> p
 => #<Product id: 1, name: "PS4", brand: "Sony", price: "$400.00 USD", description: "NextGen Gaming Console", created_at: "2020-08-03 00:00:34", updated_at: "2020-08-03 00:00:34">
 ```
 _Now exit the irb by typing exit into your terminal._
+
+### Add Seed Data
+
+_In the db directory, Rails includes a seeds.rb file which we will use to add our seed data._
+
+```
+Product.destroy_all
+
+# Creates an array of 8 elements from 1 - 8
+product_numbers = [*1..8]
+
+# Creates 8 products
+product_numbers.each do |num|
+  Product.create(
+    name: "Product name_#{num}",
+    brand: "Product brand_#{num}",
+    price: "$#{num}00.00",
+    description: "Product description_#{num}"
+  )
+end
+```
+
+*__Now we just need to run the command rails db:seed and then run our Rails server again.__*
+
+```
+// Run the Rails server
+rails s
+// Open a browser window and go to 
+http://localhost:3000/api/v1/products/
+```
+
+*You should be able to see all the products.*
