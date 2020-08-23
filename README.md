@@ -2,13 +2,11 @@
 
 ### Create A Versioned Directory For Our Controllers
 
-*__First we create the api directory__*
 ```
+// First we create the api directory
 mkdir my-dope-api/app/controllers/api
-```
 
-*__Followed by the v1 directory__*
-```
+// Followed by the v1 directory
 mkdir my-dope-api/app/controllers/api/v1
 ```
 
@@ -44,19 +42,17 @@ end
 ### Generate Models And Migrations
 
 ```
+// This command will create the migration, the model files, and all the boilerplate code.
 rails g model product name:string brand:string price:string description:string --no-helper --no-assets --no-template-engine --no-test-framework
 ```
 
-_This command will create the migration, the model files, and all the boilerplate code._
-
 ### Create Database And Run Migrations
 
-*__Create the database__*
 ```
+// Create the database
 rake db:create
-```
-*__Run the migration files__*
-```
+
+// Run the migration files
 rake db:migrate
 ```
 
