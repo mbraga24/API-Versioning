@@ -127,3 +127,20 @@ irb(main):001:0>
 // To add a product run:
 irb(main):001:0> p = Product.new(name: "PS4", brand: "Sony", price: "$400.00 USD", description: "NextGen Gaming Console")
 ```
+*__Your output should look like this:__*
+
+```
+// Output
+=> #<Product id: nil, name: "PS4", brand: "Sony", price: "$400.00 USD", description: "NextGen Gaming Console", created_at: nil, updated_at: nil>
+
+// Since we have a product value assigned to a variable we can call save on our variable and see if it works.
+irb(main):002:0> p.save
+```
+
+*__Now when you call p in the IRB you should see that our first product now has an id.__*
+
+```
+irb(main):003:0> p
+=> #<Product id: 1, name: "PS4", brand: "Sony", price: "$400.00 USD", description: "NextGen Gaming Console", created_at: "2020-08-03 00:00:34", updated_at: "2020-08-03 00:00:34">
+```
+_Now exit the irb by typing exit into your terminal._
