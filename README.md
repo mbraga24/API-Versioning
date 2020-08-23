@@ -29,3 +29,14 @@ Running via Spring preloader in process 44453
   end
 end
 ```
+__Change your boiler plate routes to this:__
+
+```
+Running via Spring preloader in process 44453
+      create  app/controllers/api/v1/products_controller.rb
+       route  namespace :api do
+  namespace :v1 do
+    resources :products, only: [:index, :show, :create]
+  end
+end
+```
