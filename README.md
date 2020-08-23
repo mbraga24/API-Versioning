@@ -1,24 +1,28 @@
-# README
+# API Versioning
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Highlights
 
-Things you may want to cover:
+### Create A Versioned Directory For Our Controllers
 
-* Ruby version
+// First we create the api directory
+mkdir my-dope-api/app/controllers/api
 
-* System dependencies
+// Followed by the v1 directory
+mkdir my-dope-api/app/controllers/api/v1
 
-* Configuration
+### Generate Controllers
 
-* Database creation
+rails g controller api/v1/products index show --no-helper --no-assets --no-template-engine --no-test-framework
 
-* Database initialization
+You should see something like this on the terminal:
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```
+Running via Spring preloader in process 44453
+      create  app/controllers/api/v1/products_controller.rb
+       route  namespace :api do
+  namespace :v1 do
+    get 'products/index'
+    get 'products/show'
+  end
+end
+```
