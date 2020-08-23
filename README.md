@@ -17,7 +17,7 @@ mkdir my-dope-api/app/controllers/api/v1
 rails g controller api/v1/products index show --no-helper --no-assets --no-template-engine --no-test-framework
 ```
 
-__You should see something like this on the terminal:___
+__You should see something like this on the terminal:__
 
 ```
 Rails.application.routes.draw do
@@ -39,4 +39,10 @@ Rails.application.routes.draw do
     end
   end
 end
+```
+
+### Generate Models And Migrations
+
+```
+rails g model product name:string brand:string price:string description:string --no-helper --no-assets --no-template-engine --no-test-framework
 ```
