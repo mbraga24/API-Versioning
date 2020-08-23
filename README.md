@@ -47,7 +47,7 @@ end
 rails g model product name:string brand:string price:string description:string --no-helper --no-assets --no-template-engine --no-test-framework
 ```
 
-*__This command will create the migration, the model files, and all the boilerplate code.__*
+_This command will create the migration, the model files, and all the boilerplate code._
 
 ### Create Database And Run Migrations
 
@@ -62,7 +62,7 @@ rake db:migrate
 
 ### Add Code To The Products Controller
 
-*__Now we can put some time into the code that will allow us to persist and read data from our database.__*
+_Now we can put some time into the code that will allow us to persist and read data from our database._
 
 ```
 class Api::V1::ProductsController < ApplicationController
@@ -119,3 +119,15 @@ end
 
 _Action Controller Parameters_
 > Allows you to choose which attributes should be permitted for mass updating and thus prevent accidentally exposing that which shouldn’t be exposed. Provides two methods for this purpose: require and permit. The former is used to mark parameters as required. The latter is used to set the parameter as permitted and limit which attributes should be allowed for mass updating.
+
+### Add Test Data
+
+_We can run rails c or rails console to start a development environment._
+
+```
+// The IRB should look something like this:
+irb(main):001:0>
+
+// To add a product run:
+irb(main):001:0> p = Product.new(name: "PS4", brand: "Sony", price: "$400.00 USD", description: "NextGen Gaming Console")
+```
