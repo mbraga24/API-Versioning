@@ -1,7 +1,7 @@
 class Api::V1::ProductsController < ApplicationController
   # index renders all items in the products table
   def index
-    products = Products.all
+    products = Product.all
 
     render json: products, status: 200
   end
