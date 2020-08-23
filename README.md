@@ -52,6 +52,10 @@ rails g model product name:string brand:string price:string description:string -
 ### Create Database And Run Migrations
 
 *__Create the database__*
-```rake db:create```
+```
+rake db:create
+```
 *__Run the migration files__*
-```rake db:migrate```
+```
+rake db:migrate
+```
