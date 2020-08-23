@@ -179,6 +179,4 @@ http://localhost:3000/api/v1/products/
 
 ## Article source: ##
 
-https://medium.com/swlh/how-to-build-an-api-with-ruby-on-rails-28e27d47455a
-
-_The key steps were taken from this article for personal document and to be revisited when needed_
+_The steps shown here were taken from this [article](https://medium.com/swlh/how-to-build-an-api-with-ruby-on-rails-28e27d47455a) for personal documentation and to be revisited when needed_
