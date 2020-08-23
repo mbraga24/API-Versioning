@@ -17,7 +17,7 @@ mkdir my-dope-api/app/controllers/api/v1
 rails g controller api/v1/products index show --no-helper --no-assets --no-template-engine --no-test-framework
 ```
 
-__You should see something like this on the terminal:__
+*__You should see something like this on the terminal:__*
 
 ```
 Rails.application.routes.draw do
@@ -29,7 +29,7 @@ Rails.application.routes.draw do
   end
 end
 ```
-__Change your boiler plate routes to this:__
+*__Change your boiler plate routes to this:__*
 
 ```
 Rails.application.routes.draw do
@@ -46,3 +46,5 @@ end
 ```
 rails g model product name:string brand:string price:string description:string --no-helper --no-assets --no-template-engine --no-test-framework
 ```
+
+*__This command will create the migration, the model files, and all the boilerplate code.__*
